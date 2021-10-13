@@ -1,0 +1,351 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.4;
+}
+/*==========================NAVBAR==========================*/
+#navbar {
+    /* background-color: rgb(219, 58, 58); */
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 60px;
+    padding: 0px 30px 0px 0px;
+}
+@media (max-width: 340px) {
+    #navbar {
+      padding: 0px;
+    }
+}
+#navbar-ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow: hidden; /* This property is to prevent the li elements from going outside of the list.*/
+}
+#navbar-ul li a {
+    display: block;
+    padding: 0px 20px 0px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    font-weight: bold;
+    transition: 1s ease;
+}
+#navbar-ul a:hover {
+    background-color: white;
+    color: #218838;
+}
+/*==========================WELCOME SECTION==========================*/
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0px;
+    background-color: rgb(49, 45, 45);
+}
+#welcome-section h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+@media (max-width: 600px) {
+    #welcome-section h1 {
+      font-size: 40px;
+    }
+  }
+@media (max-width: 410px) {
+  #welcome-section h1 {
+    font-size: 35px;
+  }
+  #welcome-section p:last-child {
+      font-size: 18px;
+  }
+}
+@media (max-width: 350px) {
+    #welcome-section h1 {
+      font-size: 25px;
+    }
+}
+#welcome-section p {
+    font-size: 24px;
+    font-weight: 100;
+    color: #218838;
+}
+#welcome-section p:last-child {
+    text-align: center;
+    color: white;
+}
+#welcome-section img {
+    border: 1px solid transparent;
+    border-radius: 100px;
+}
+.fa-html5 {
+    color: rgb(218, 72, 19) !important;
+}
+.fa-css3 {
+    color: rgb(53, 53, 189) !important;
+}
+.fa-bootstrap {
+    color: #be4bdb;
+}
+.fa-js {
+    color: rgb(211, 211, 17) !important;
+}
+.fa-node-js {
+    color: #589652
+}
+/*==========================PROJECTS==========================*/
+#projects {
+    background-color: rgb(31, 30, 30);
+    margin: 0px;
+}
+@media (max-width: 600px) {
+    #projects {
+        padding: 0px 15px;
+    }
+}
+#projects h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 60px;
+    margin: 0px auto 50px;
+    color: #218838;
+}
+@media (max-width: 700px) {
+    #projects h2 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 550px) {
+    #projects h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 450px) {
+    #projects h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #projects {
+        padding: 0px;
+    }
+}
+#projects #pills-tab {
+    display: flex;
+    justify-content: center;
+}
+#pills-frontend-tab, #pills-backend-tab {
+    color: white;
+    font-weight: bold;
+}
+#projects p {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+@media (max-width: 700px) {
+    #projects p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 550px) {
+    #projects p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px) {
+    #projects p {
+        font-size: 18px;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 0px auto;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .expand {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 400px) {
+    .grid-container {
+        padding: 5px;
+    }
+}
+.grid-container .expand {
+    transition: transform 0.4s;
+}
+.grid-container .expand:hover {
+    transform: scale(1.03);
+}
+.grid-container a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.grid-container a:hover {
+    color: #218838;
+}
+.project {
+    background-color: rgb(49, 45, 45);
+    height: 80%;
+}
+.project-repo {
+    background-color: black;
+    height: 20%;
+    text-align: center;
+    justify-content: center;
+}
+@media (max-width: 400px) {
+    .project-repo {
+        font-size: 12px;
+    }
+}
+.grid-container img {
+    width: 100%;
+    height: 100%;
+}
+/*==========================CONTACTS==========================*/
+.last-section {
+    background-color: rgb(49, 45, 45);
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+#contact-section-header > h2 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 0px;
+    color: #218838;
+}
+@media (max-width: 600px) {
+  #contact-section-header h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+    #contact-section-header h2 {
+      font-size: 30px;
+    }
+  }
+#contact-section-header > p {
+    font-weight: bold;
+    font-size: 24px;
+}
+@media (max-width: 600px) {
+    #contact-section-header p {
+      font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    #contact-section-header p {
+      font-size: 18px;
+    }
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+.contact-links > a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+@media (max-width: 600px) {
+    .contact-links > a {
+      font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .contact-links > a {
+      font-size: 15px;
+    }
+}
+.contact-links > a:hover {
+    transform: translateY(8px);
+    color: #218838;
+}
+.fa-linkedin {
+    color: #4c6ef5
+}
+.fa-facebook-square {
+    color: rgb(49, 49, 163);
+}
+.fa-github {
+    color: rgb(15, 15, 15);
+}
+.fa-twitter {
+    color: rgb(66, 120, 221);
+}
+.fa-at {
+    color: rgb(211, 18, 18);
+}
+.fa-mobile-alt {
+    color: rgb(128, 128, 128);
+}
+.last-section .submitBtnDiv {
+    display: flex;
+    justify-content: center;
+}
+.last-section .toTopDiv {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    margin-right: 10px;
+}
+.toTopDiv div {
+    border-radius: 5px;
+    background-color: #218838;
+    padding: 5px;
+}
+.toTopDiv div:hover {
+    cursor: pointer;
+    color: rgb(49, 45, 45);
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+        <title><%= title %></title>
+    </head>
+    <body>
+        <header id="header">
+            <nav id="navbar">
+                <ul id="navbar-ul">
+                    <li><a class="nav-link" href="#welcome-section">About</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="welcome-section">
+            <h1>Hey there, I am Tunji</h1>
+            <img src="/img/IMG_5226.jpg" class="" alt="my photo" style="width: 200px; height: 200px;">
+            <p>a software developer</p>
+            <p>I possess intermediate to advanced skills in Html <i class="fab fa-html5"></i>, Css <i class="fab fa-css3"></i>, Bootstrap <i class="fas fa-bootstrap"></i>, Vanillajs <i class="fab fa-js"></i>, Nodejs <i class="fab fa-node-js"></i>, Express and MongoDB....</p>
+        </section>
+
+        <section id="projects">
+            <h2>Here are some of my projects</h2>
+            <main>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-frontend-tab" data-toggle="pill" href="#pills-frontend" role="tab" aria-controls="pills-frontend" aria-selected="true">Front End</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-backend-tab" data-toggle="pill" href="#pills-backend" role="tab" aria-controls="pills-backend" aria-selected="false">Back End</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-frontend" role="tabpanel" aria-labelledby="pills-frontend-tab">
+                        <div class="grid-container">
+                            <div class="expand">
+                                <a href="https://continentalbusters.netlify.app/" target="_blank" class="project">
+                                    <img src="/img/Screenshot(227).png" alt="continental busters">
+                                </a>
+                                <a href="https://github.com/TunjiDev/Continental-Busters" target="_blank" class="project-repo">RWD- Continental Busters(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://tunjiwwtbam.netlify.app/" target="_blank" class="project">
+                                    <img src="/img/Screenshot(228).png" alt="wwtbam">
+                                </a>
+                                <a href="https://github.com/TunjiDev/Who-Wants-To-Be-A-Millonaire-Game-Vanilla-Js-" target="_blank" class="project-repo">Who Wants To Be A Millonaire Game(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://towerofgod.netlify.app/" target="_blank" class="project">
+                                    <img src="/img/Screenshot(223).png" alt="tower of god dropdown">
+                                </a>
+                                <a href="https://github.com/TunjiDev/tog-webpage" target="_blank" class="project-repo">RWD- TOG Webpage With Dropdown(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://towerofgod-bootstrap.netlify.app/" target="_blank" class="project">
+                                    <img src="/img/Screenshot(226).png" alt="TOG bootstrap">
+                                </a>
+                                <a href="https://github.com/TunjiDev/Tower-of-God-Bootstrap-webpage" target="_blank" class="project-repo">RWD- TOG Webpage(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://simple-grid.netlify.app/" target="_blank" class="project">
+                                    <img src="/img/Screenshot(225).png" alt="Grid webpage">
+                                </a>
+                                <a href="https://github.com/TunjiDev/simple-grid-project-html-css-" target="_blank" class="project-repo">RWD- Simple Grid Webpage(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://smashmagazine-clone.netlify.app/" target="_blank" class="project">
+                                    <img src="/img/Screenshot(224).png" alt="smash mag">
+                                </a>
+                                <a href="https://github.com/TunjiDev/smash-magazine-clone-html-css-" target="_blank" class="project-repo">RWD- Smash mag clone(See Repo)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-backend" role="tabpanel" aria-labelledby="pills-backend-tab">
+                        <div class="grid-container">
+                            <div class="expand">
+                                <a href="https://natours-tunji.herokuapp.com/" target="_blank" class="project">
+                                    <img src="/img/Screenshot(233).png" alt="natours">
+                                </a>
+                                <a href="https://github.com/TunjiDev/tours-app" target="_blank" class="project-repo">Tours App(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://tunji-blog-app.herokuapp.com/blogs" target="_blank" class="project">
+                                    <img src="/img/Screenshot(232).png" alt="blog">
+                                </a>
+                                <a href="https://github.com/TunjiDev/blog-app" target="_blank" class="project-repo">A Simple Blog App(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://documenter.getpostman.com/view/15984587/Tzz5tJWf" target="_blank" class="project">
+                                    <img src="/img/Screenshot(230).png" alt="chat-api">
+                                </a>
+                                <a href="https://github.com/TunjiDev/anter-chat-app" target="_blank" class="project-repo">Basic Chat App API(See Repo)</a>
+                            </div>
+                            <div class="expand">
+                                <a href="https://documenter.getpostman.com/view/15594941/UUy1gT1t" target="_blank" class="project">
+                                    <img src="/img/Screenshot(231).png" alt="TOG bootstrap">
+                                </a>
+                                <a href="https://github.com/TunjiDev/trivia-game-backend" target="_blank" class="project-repo">Trivia Game App API(See Repo)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <section class="last-section">
+            <div id="contacts">
+                <div id="contact-section-header">
+                    <h2>Let's work together...</h2>
+                    <p>How do u take your coffee?</p>
+                </div>
+                <div class="contact-links">
+                    <a id="profile-link" href="https://github.com/TunjiDev" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a id="profile-link" href="https://www.linkedin.com/in/adetunji-igbatayo-0a059416b" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://web.facebook.com/adetunji.igbatayo" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="https://twitter.com/El_directo_" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="mailto:adetunjiigbatayo@gmail.com"><i class="fas fa-at"></i> Send a mail</a>
+                    <a href="tel:090-5357-2653"><i class="fas fa-mobile-alt"></i> Call me</a>
+                </div>
+                
+                <h2 style="margin-bottom: 30px; color: green;">OR</h2>
+                <p>You can contact me by filling the form below</p>
+            </div>
+            
+            <div class="modalDiv">
+                <div class="submitBtnDiv">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">CLICK HERE!</button>
+                </div>
+        
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-success bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Fill this form please</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Contact form-->
+                                <form action="/contact-me" method="post">
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                                        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">How may I help you?</label>
+                                        <textarea class="form-control" id="message" name="message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary bg-success">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toTopDiv">
+                <div>Back to Top</div>
+            </div>
+        </section>
+
+        <script src="/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
+</html>

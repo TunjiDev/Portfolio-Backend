@@ -24,6 +24,16 @@ const sendEmail = async (options) => {
     await transporter.sendMail(mailOptions);
 };
 
+exports.getPortfolioPage = (req, res) => {
+    try {
+        res.status(200).render('portfolio', {
+            title: 'My Portfolio Page'
+        });
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 exports.contactMe = async (req, res) => {
     try {
         const contact = await Contact.create(req.body);

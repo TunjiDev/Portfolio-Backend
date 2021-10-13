@@ -2,6 +2,6 @@ const express = require('express');
 const router = express.Router();
 const portfolioController = require('../controllers/portfolioController');
 
-router.post('/contact-me', portfolioController.contactMe);
+router.post('/', portfolioController.contactMe);
 
 module.exports = router;

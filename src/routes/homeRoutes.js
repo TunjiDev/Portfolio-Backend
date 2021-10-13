@@ -1,13 +1,9 @@
 const express = require('express');
-
 const router = express.Router();
+const portfolioController = require('../controllers/portfolioController');
 
-router.all(
-  '/',
-  async (req, res, next) => {
-    res.redirect(
-      'https://tunjidev.github.io/'
-    );
-  }
-);
+
+router.route('/')
+  .get(portfolioController.getPortfolioPage);
+
 module.exports = router;
