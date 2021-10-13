@@ -148,6 +148,9 @@ body {
         padding: 0px;
     }
 }
+#projects .nav-pills > li > a.active {
+    background-color: #218838 !important;
+}
 #projects #pills-tab {
     display: flex;
     justify-content: center;
