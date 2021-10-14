@@ -47,7 +47,7 @@ exports.contactMe = async (req, res) => {
         await sendEmail({
             email: 'adetunjiigbatayo@gmail.com',
             subject: 'Contact you',
-            message: 'Someone has tried to contact on through your portfolio page'
+            message: 'Someone has tried to contact through your portfolio page'
         });
 
     } catch (error) {

@@ -39,6 +39,6 @@ module.exports = class Email {
     }
 
     async sendMessage() {
-        await this.send('hello', 'Thank you for reaching out to me, I\'ll get back to you soon!');
+        await this.send('hello', 'Thank you for reaching out to me!');
     }
 };
